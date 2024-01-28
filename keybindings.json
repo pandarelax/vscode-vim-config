@@ -1,0 +1,125 @@
+[
+    {
+      "command": "projectManager.listGitProjects#sideBarGit",
+      "key": "alt+o"
+    },
+    {
+      "command": "expand_region",
+      "key": "ctrl+=",
+      "when": "editorTextFocus"
+    },
+    {
+      "command": "undo_expand_region",
+      "key": "ctrl+-",
+      "when": "editorTextFocus && editorHasSelection"
+    },
+    {
+      "command": "workbench.action.toggleSidebarVisibility",
+      "key": "ctrl+e"
+    },
+    {
+      "command": "workbench.files.action.focusFilesExplorer",
+      "key": "ctrl+e",
+      "when": "editorTextFocus"
+    },
+    {
+      "command": "explorer.newFile",
+      "key": "a",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "renameFile",
+      "key": "r",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "filesExplorer.copy",
+      "key": "c",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "filesExplorer.paste",
+      "key": "p",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "deleteFile",
+      "key": "d",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "editor.action.addSelectionToNextFindMatch",
+      "key": "ctrl+n",
+      "when": "editorFocus"
+    },
+    {
+      "command": "editor.action.addSelectionToNextFindMatch",
+      "key": "ctrl+n",
+      "when": "editorFocus"
+    },
+    {
+      "command": "-workbench.action.files.save",
+      "key": "alt+s"
+    },
+    {
+      "command": "saveAll",
+      "key": "alt+s"
+    },
+    {
+      "command": "-editor.action.addSelectionToNextFindMatch",
+      "key": "alt+d",
+      "when": "editorFocus"
+    },
+    {
+      "command": "-extension.vim_cmd+d",
+      "key": "alt+d",
+      "when": "editorTextFocus && vim.active && vim.use<D-d> && !inDebugRepl"
+    },
+    {
+      "command": "-workbench.action.splitEditor",
+      "key": "alt+\\"
+    },
+    {
+      "command": "turboConsoleLog.displayLogMessage",
+      "key": "alt+i"
+    },
+    {
+      "command": "-turboConsoleLog.displayLogMessage",
+      "key": "ctrl+alt+l"
+    },
+    {
+      "command": "-undo",
+      "key": "alt+z"
+    },
+    {
+      "command": "-interactiveEditor.unstash",
+      "key": "alt+z",
+      "when": "interactiveEditorHasStashedSession && !editorReadonly"
+    },
+    {
+      "command": "workbench.action.toggleZenMode",
+      "key": "alt+z"
+    },
+    {
+      "command": "-workbench.action.toggleZenMode",
+      "key": "alt+k z"
+    },
+    {
+      "command": "-editor.action.selectAll",
+      "key": "alt+a"
+    },
+    {
+      "command": "editor.action.selectAll",
+      "key": "alt+a"
+    },
+    {
+      "command": "workbench.action.terminal.toggleTerminal",
+      "key": "ctrl+\\",
+      "when": "terminal.active"
+    },
+    {
+      "command": "-workbench.action.terminal.toggleTerminal",
+      "key": "ctrl+`",
+      "when": "terminal.active"
+    }
+  ]
