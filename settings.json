@@ -1,5 +1,4 @@
 {
-  "editor.fontSize": 13,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
@@ -44,7 +43,6 @@
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Gruvbox Dark Medium",
   "npm.keybindingsChangedWarningShown": true,
   "dotnet.help.firstView": "gettingStarted",
   "extensions.confirmedUriHandlerExtensionIds": [
@@ -54,8 +52,8 @@
   "php.validate.executablePath": "C:/xampp/php/php.exe",
   "leetcode.showDescription": "Both",
   "files.autoSave": "onFocusChange",
-  "editor.fontFamily": "JetBrains Mono",
-  "terminal.integrated.fontFamily": "monospace",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "editor.mouseWheelZoom": true,
   "editor.fontLigatures": true,
   "git.mergeEditor": true,
@@ -143,10 +141,10 @@
       "before": ["leader", "p"],
       "commands": ["workbench.action.quickOpen"]
     },
-    {
-      "before": ["leader", "p"],
-      "commands": ["editor.action.formatDocument"]
-    },
+    // {
+    //   "before": ["leader", "p"],
+    //   "commands": ["editor.action.formatDocument"]
+    // },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
@@ -189,5 +187,11 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
-  "editor.cursorBlinking": "smooth"
+  "editor.cursorBlinking": "smooth",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }
