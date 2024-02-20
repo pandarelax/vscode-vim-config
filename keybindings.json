@@ -27,6 +27,11 @@
       "key": "a",
       "when": "filesExplorerFocus && !inputFocus"
     },
+     {
+      "command": "explorer.newFolder",
+      "key": "shift+a",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
     {
       "command": "renameFile",
       "key": "r",
@@ -97,14 +102,6 @@
       "when": "interactiveEditorHasStashedSession && !editorReadonly"
     },
     {
-      "command": "workbench.action.toggleZenMode",
-      "key": "alt+z"
-    },
-    {
-      "command": "-workbench.action.toggleZenMode",
-      "key": "alt+k z"
-    },
-    {
       "command": "-editor.action.selectAll",
       "key": "alt+a"
     },
@@ -121,5 +118,9 @@
       "command": "-workbench.action.terminal.toggleTerminal",
       "key": "ctrl+`",
       "when": "terminal.active"
+    },
+    {
+      "command": "openEditors.closeAll",
+      "key": "ctrl+k w"
     }
   ]
