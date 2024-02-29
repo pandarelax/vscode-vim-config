@@ -1,4 +1,10 @@
 {
+  // workbench settings
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // editor settings
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
@@ -12,58 +18,52 @@
   "editor.stickyScroll.enabled": true,
   "editor.suggest.insertMode": "replace",
   "editor.wordWrap": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.fontSize": 15,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.mouseWheelZoom": true,
+  "editor.fontLigatures": true,
+  "editor.unicodeHighlight.allowedLocales": {
+    "tr": true
+  },
+
+  // explorer settings
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+
+  // extensions settings
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": false,
-  "projectManager.git.baseFolders": ["$home/workspace"],
-  "projectManager.sortList": "Recent",
-  "sortJSON.orderOverride": [
-    "name",
-    "version",
-    "main",
-    "module",
-    "types",
-    "typings",
-    "files",
-    "publishConfig",
-    "repository",
-    "scripts",
-    "prefix",
-    "description",
-    "body"
-  ],
-  "sortJSON.orderUnderride": [
-    "resolutions",
-    "dependencies",
-    "devDependencies",
-    "peerDependencies",
-    "cSpell.userWords"
-  ],
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+  // terminal settings
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+
+  // other settings
+  "window.titleBarStyle": "custom",
+  "files.autoSave": "onFocusChange",
+  "git.mergeEditor": true,
+  "zenMode.hideLineNumbers": false,
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.sideBar.location": "right",
   "npm.keybindingsChangedWarningShown": true,
   "dotnet.help.firstView": "gettingStarted",
   "extensions.confirmedUriHandlerExtensionIds": [
     "ms-dotnettools.dotnet-interactive-vscode",
     "ms-dotnettools.vscode-dotnet-pack"
   ],
-  "php.validate.executablePath": "C:/xampp/php/php.exe",
-  "leetcode.showDescription": "Both",
-  "files.autoSave": "onFocusChange",
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.mouseWheelZoom": true,
-  "editor.fontLigatures": true,
-  "git.mergeEditor": true,
-  "glassit.alpha": 220,
-  "window.titleBarStyle": "custom",
-  "vscode_vibrancy.type": "acrylic",
-  "vscode_vibrancy.theme": "Custom theme (use imports)",
-  "window.menuBarVisibility": "compact",
-  "solidity.telemetry": false,
-  "zenMode.hideLineNumbers": false,
+  "terminal.integrated.fontSize": 15,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/efehanturhan/.config/nvim/init.lua",
+
+  // APC UI settings
+  "apc.menubar.compact": true,
+  "security.workspace.trust.untrustedFiles": "open",
+
   // Vim settings
   "vim.foldfix": true,
   "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
@@ -114,6 +114,10 @@
     },
     // NICE TO HAVE
     {
+      "before": ["leader", "d"],
+      "after": ["d", "d"]
+    },
+    {
       "before": ["leader", "w"],
       "commands": [":w!"]
     },
@@ -141,10 +145,10 @@
       "before": ["leader", "p"],
       "commands": ["workbench.action.quickOpen"]
     },
-    // {
-    //   "before": ["leader", "p"],
-    //   "commands": ["editor.action.formatDocument"]
-    // },
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.formatDocument"]
+    },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
@@ -187,11 +191,4 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
-  "editor.cursorBlinking": "smooth",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "editor.fontSize": 15,
-  "terminal.integrated.fontSize": 15,
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  }
 }
