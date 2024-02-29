@@ -162,7 +162,7 @@
       "after": ["g", "g", "V", "G"]
     },
     {
-      "before": ["leader", "k"],
+      "before": ["<s-k>"],
       "commands": ["editor.action.showHover"]
     }
   ],
