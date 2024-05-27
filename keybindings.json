@@ -1,7 +1,7 @@
 [
     {
       "command": "projectManager.listGitProjects#sideBarGit",
-      "key": "alt+o"
+      "key": "cmd+o"
     },
     {
       "command": "expand_region",
@@ -58,56 +58,43 @@
       "when": "editorFocus"
     },
     {
-      "command": "editor.action.addSelectionToNextFindMatch",
-      "key": "ctrl+n",
-      "when": "editorFocus"
-    },
-    {
       "command": "-workbench.action.files.save",
-      "key": "alt+s"
+      "key": "cmd+s"
     },
     {
       "command": "saveAll",
-      "key": "alt+s"
+      "key": "cmd+s"
     },
     {
       "command": "-editor.action.addSelectionToNextFindMatch",
-      "key": "alt+d",
+      "key": "cmd+d",
       "when": "editorFocus"
     },
     {
       "command": "-extension.vim_cmd+d",
-      "key": "alt+d",
+      "key": "cmd+d",
       "when": "editorTextFocus && vim.active && vim.use<D-d> && !inDebugRepl"
     },
     {
       "command": "-workbench.action.splitEditor",
-      "key": "alt+\\"
-    },
-    {
-      "command": "turboConsoleLog.displayLogMessage",
-      "key": "alt+i"
-    },
-    {
-      "command": "-turboConsoleLog.displayLogMessage",
-      "key": "ctrl+alt+l"
+      "key": "cmd+\\"
     },
     {
       "command": "-undo",
-      "key": "alt+z"
+      "key": "cmd+z"
     },
     {
       "command": "-interactiveEditor.unstash",
-      "key": "alt+z",
+      "key": "cmd+z",
       "when": "interactiveEditorHasStashedSession && !editorReadonly"
     },
     {
       "command": "-editor.action.selectAll",
-      "key": "alt+a"
+      "key": "cmd+a"
     },
     {
       "command": "editor.action.selectAll",
-      "key": "alt+a"
+      "key": "cmd+a"
     },
     {
       "command": "workbench.action.terminal.toggleTerminal",
@@ -122,5 +109,14 @@
     {
       "command": "openEditors.closeAll",
       "key": "ctrl+k w"
-    }
+    },
+    {
+      "command": "workbench.action.quickTextSearch",
+      "key": "shift shift"
+    },
+    {
+      "key": "ctrl+k",
+      "command": "-deleteAllRight",
+      "when": "textInputFocus && !editorReadonly"
+    },
   ]
