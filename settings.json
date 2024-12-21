@@ -204,16 +204,6 @@
                 "workbench.action.focusRightGroup"
             ]
         },
-        {
-            "before": [
-                "<leader>",
-                "q",
-                "a"
-            ],
-            "commands": [
-                "openEditors.closeAll"
-            ]
-        },
         // NICE TO HAVE
         {
             "before": [
@@ -237,19 +227,20 @@
         {
             "before": [
                 "leader",
-                "q"
-            ],
-            "commands": [
-                ":q!"
-            ]
-        },
-        {
-            "before": [
-                "leader",
                 "x"
             ],
             "commands": [
                 ":x!"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q",
+                "a"
+            ],
+            "commands": [
+                "openEditors.closeAll"
             ]
         },
         {
