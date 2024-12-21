@@ -1,0 +1,418 @@
+{
+    "vscode_custom_css.imports": [
+        // Absolute file paths for your css/js files
+        // For Mac or Linux
+        // "file:///Users/your-user-name/custom-vscode.css"
+        // For Windows
+        "file:///C:/Users/Efe/custom-vscode.css",
+        "file:///C:/Users/Efe/vscode-script.js",
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    // editor settings
+    "editor.semanticHighlighting.enabled": true,
+    "terminal.integrated.minimumContrastRatio": 1,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.addMissingImports": "explicit",
+        "source.organizeImports": "explicit",
+        "source.removeUnusedImports": "explicit"
+    },
+    "files.insertFinalNewline": false,
+    "window.menuBarVisibility": "compact",
+    "window.density.editorTabHeight": "compact",
+    "window.commandCenter": false,
+    // pink as the accent color
+    "catppuccin.accentColor": "pink",
+    // make Mocha specifically very dark
+    // (this preserves other flavors!)
+    // "catppuccin.colorOverrides": {
+    //     "mocha": {
+    //         "base": "#000000",
+    //         "mantle": "#010101",
+    //         "crust": "#020202",
+    //     },
+    // },
+    // use your accent (pink) on the statusBar as well
+    // "catppuccin.customUIColors": {
+    //     "mocha": {
+    //         "statusBar.foreground": "accent",
+    //     },
+    // },
+    "editor.inlineSuggest.enabled": true,
+    "editor.lineNumbers": "relative",
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.mouseWheelZoom": true,
+    "editor.fontLigatures": true,
+    "editor.unicodeHighlight.allowedLocales": {
+        "tr": true
+    },
+    // explorer settings
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // extensions settings
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.ignoreRecommendations": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    // terminal settings
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    // other settings
+    "window.titleBarStyle": "custom",
+    "files.autoSave": "onFocusChange",
+    "git.mergeEditor": true,
+    "zenMode.hideLineNumbers": false,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "dotnet.help.firstView": "gettingStarted",
+    "extensions.confirmedUriHandlerExtensionIds": [
+        "ms-dotnettools.dotnet-interactive-vscode",
+        "ms-dotnettools.vscode-dotnet-pack"
+    ],
+    "terminal.integrated.fontSize": 15,
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+    // APC UI settings
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.formatOnSaveMode": "file",
+    "eslint.format.enable": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": false
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "vim.cursorStylePerMode.replace": "underline",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "typescript.referencesCodeLens.enabled": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "editor.overviewRulerBorder": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "git.openRepositoryInParentFolders": "always",
+    "settingsSync.ignoredSettings": [
+        "-csharp.debug.hotReloadVerbosity",
+        "-csharp.experimental.debug.hotReload",
+        "-csharp.debug.hotReloadOnSave"
+    ],
+    "csharp.preview.improvedLaunchExperience": true,
+    "git.suggestSmartCommit": false,
+    "editor.cursorBlinking": "solid",
+    "editor.codeLensFontFamily": " ",
+    "continue.enableTabAutocomplete": true,
+    "vitest.nodeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+    "githubPullRequests.pullBranch": "never",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "prettier.jsxSingleQuote": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.endOfLine": "auto",
+    // Vim settings
+    "vim.foldfix": true,
+    "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.textColor": "white",
+    "vim.leader": "<space>",
+    "vim.hlsearch": true,
+    "vim.handleKeys": {
+        "<C-f>": false
+    },
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // NAVIGATION
+        // switch b/w buffers
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "commands": [
+                ":bprevious"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "commands": [
+                ":bnext"
+            ]
+        },
+        // splits
+        {
+            "before": [
+                "leader",
+                "v"
+            ],
+            "commands": [
+                ":vsplit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s"
+            ],
+            "commands": [
+                ":split"
+            ]
+        },
+        // panes
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "commands": [
+                "workbench.action.focusLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "commands": [
+                "workbench.action.focusBelowGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "commands": [
+                "workbench.action.focusAboveGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "commands": [
+                "workbench.action.focusRightGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q",
+                "a"
+            ],
+            "commands": [
+                "openEditors.closeAll"
+            ]
+        },
+        // NICE TO HAVE
+        {
+            "before": [
+                "leader",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                ":w!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "q"
+            ],
+            "commands": [
+                ":q!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "x"
+            ],
+            "commands": [
+                ":x!"
+            ]
+        },
+        {
+            "before": [
+                "8",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ]
+        },
+        {
+            "before": [
+                "9",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "m"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "l"
+            ],
+            "commands": [
+                "editor.toggleFold"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ]
+        },
+        {
+            "before": [
+                "<c-a>"
+            ],
+            "after": [
+                "g",
+                "g",
+                "V",
+                "G"
+            ]
+        },
+        {
+            "before": [
+                "<s-k>"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "m"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        // Stay in visual mode while indenting
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        // Move selected lines while staying in visual mode
+        {
+            "before": [
+                "J"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
+        },
+        // toggle comment selection
+        {
+            "before": [
+                "leader",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s",
+                "l"
+            ],
+            "commands": [
+                "sortLines.sortLines"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "C-h",
+            ],
+            "commands": [
+                "cursorLeft"
+            ],
+            "when": "textInputFocus"
+        },
+        {
+            "before": [
+                "C-l",
+            ],
+            "commands": [
+                "cursorRight"
+            ],
+            "when": "textInputFocus"
+        },
+    ],
+}
