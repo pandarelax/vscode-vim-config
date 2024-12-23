@@ -19,6 +19,7 @@
     },
     "files.insertFinalNewline": false,
     "window.menuBarVisibility": "compact",
+    "breadcrumbs.enabled": false,
     "window.density.editorTabHeight": "compact",
     "window.commandCenter": false,
     // pink as the accent color
@@ -47,6 +48,7 @@
     "editor.suggest.insertMode": "replace",
     "editor.wordWrap": "on",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.lineHeight": 1.5,
     "editor.mouseWheelZoom": true,
     "editor.fontLigatures": true,
     "editor.unicodeHighlight.allowedLocales": {
@@ -59,7 +61,8 @@
     "extensions.autoUpdate": "onlyEnabledExtensions",
     "extensions.ignoreRecommendations": false,
     "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+        "asvetliakov.vscode-neovim": 1,
+        "vscodevim.vim": 1
     },
     // terminal settings
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
@@ -132,6 +135,7 @@
     "vim.handleKeys": {
         "<C-f>": false
     },
+    "vim.matchpairs": "(:),{:},[:],<:>",
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         // NAVIGATION
@@ -205,6 +209,14 @@
             ]
         },
         // NICE TO HAVE
+        {
+            "before": [
+                "p"
+            ],
+            "after": [
+                "<S-p>"
+            ]
+        },
         {
             "before": [
                 "leader",
@@ -319,16 +331,6 @@
                 "editor.action.showHover"
             ]
         },
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "m"
-            ],
-            "commands": [
-                "editor.action.formatDocument"
-            ]
-        },
     ],
     "vim.visualModeKeyBindings": [
         // Stay in visual mode while indenting
@@ -386,6 +388,16 @@
             ]
         }
     ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "p"
+            ],
+            "after": [
+                "P"
+            ]
+        }
+    ],
     "vim.insertModeKeyBindings": [
         {
             "before": [
@@ -404,6 +416,15 @@
                 "cursorRight"
             ],
             "when": "textInputFocus"
+        },
+        {
+            "before": [
+                "j",
+                "j",
+            ],
+            "after": [
+                "<Esc>"
+            ],
         },
     ],
 }
