@@ -1,0 +1,47 @@
+.quick-input-widget {
+	width: 900px !important;
+	left: 41% !important;
+	top: 250px !important;
+	padding: 15px !important;
+	background-color: rgb(30, 30, 30) !important;
+	border-radius: 10px !important;
+	border: 1px solid #007ACC !important;
+
+	.quick-input-header {
+		padding: 0px !important;
+		margin-bottom: 10px;
+	}
+
+	.monaco-inputbox {
+		padding: 10px !important;
+		border-radius: 5px !important;
+	}
+
+	.monaco-list-rows {
+		top: 0 !important!;
+		max-height: 670px;
+		min-height: 300px;
+	}
+
+	.monaco-list-row {
+		position: static !important!;
+		border-bottom: 1px solid #333942;
+		padding: 5px !important;
+		height: auto !important;
+	}
+
+	.quick-input-list-entry {
+		position: relative;
+		padding: 0 5px 0px 15px;
+
+		.codicon[class*=codicon-] {
+			font-size: 12px;
+		}
+	}
+
+	.quick-input-list {
+		.quick-input-list-entry.quick-input-list-separator-border {
+			border-top-width: 0px !important;
+		}
+	}
+}
