@@ -135,4 +135,13 @@
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
+  {
+    "key": "ctrl+shift+o",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "alt+q",
+    "command": "workbench.action.terminal.kill"
+  }
 ]
