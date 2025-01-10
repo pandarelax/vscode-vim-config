@@ -10,6 +10,7 @@
     "workbench.iconTheme": "material-icon-theme",
     // editor settings
     "editor.semanticHighlighting.enabled": true,
+    "csharp.semanticHighlighting.enabled": true,
     "terminal.integrated.minimumContrastRatio": 1,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -17,6 +18,7 @@
         "source.organizeImports": "explicit",
         "source.removeUnusedImports": "explicit"
     },
+    "lazygit.command": "lazygit; if ($?) { exit }",
     "files.insertFinalNewline": false,
     "window.menuBarVisibility": "compact",
     "breadcrumbs.enabled": false,
@@ -31,6 +33,7 @@
     "editor.stickyScroll.enabled": true,
     "editor.suggest.insertMode": "replace",
     "editor.wordWrap": "on",
+    // "editor.fontFamily": "'Monaspace Neon', monospace",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.lineHeight": 1.5,
     "editor.mouseWheelZoom": true,
@@ -105,7 +108,16 @@
     "javascript.preferences.quoteStyle": "single",
     "typescript.preferences.quoteStyle": "single",
     "prettier.jsxSingleQuote": true,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.formatOnSave": true,
+        "editor.wordBasedSuggestions": "off",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
     "[typescript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
@@ -131,6 +143,16 @@
     "vim.matchpairs": "(:),{:},[:],<:>",
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
+        // Git
+        {
+            "before": [
+                "leader",
+                "g"
+            ],
+            "commands": [
+                "lazygit.openLazygit"
+            ]
+        },
         // NAVIGATION
         // switch b/w buffers
         {
@@ -324,6 +346,34 @@
                 "editor.action.showHover"
             ]
         },
+        {
+            "before": [
+                "<leader>",
+                "."
+            ],
+            "commands": [
+                ":norm A.<CR>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                ","
+            ],
+            "commands": [
+                ":s/\\v\\s*(,\\s*)*$/,/<CR>:nohl<CR>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                ";"
+            ],
+            "commands": [
+                // ":s/\\v\\s*(;\\s*)*$/;/<CR>:nohl<CR>"
+                ":let @z = @0 | normal! mZ$A; | normal! `Z"
+            ]
+        },
     ],
     "vim.visualModeKeyBindings": [
         // Stay in visual mode while indenting
@@ -420,4 +470,17 @@
             ],
         },
     ],
+    "workbench.sideBar.location": "right",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "roo-cline.allowedCommands": [
+        "npm test",
+        "npm install",
+        "tsc",
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "editor.fontSize": 13,
 }
