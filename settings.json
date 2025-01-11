@@ -9,6 +9,7 @@
     ],
     "workbench.iconTheme": "material-icon-theme",
     // editor settings
+    "editor.fontSize": 14,
     "editor.semanticHighlighting.enabled": true,
     "csharp.semanticHighlighting.enabled": true,
     "terminal.integrated.minimumContrastRatio": 1,
@@ -33,7 +34,6 @@
     "editor.stickyScroll.enabled": true,
     "editor.suggest.insertMode": "replace",
     "editor.wordWrap": "on",
-    // "editor.fontFamily": "'Monaspace Neon', monospace",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.lineHeight": 1.5,
     "editor.mouseWheelZoom": true,
@@ -68,7 +68,6 @@
     "terminal.integrated.fontSize": 15,
     "typescript.suggest.paths": false,
     "javascript.suggest.paths": false,
-    // APC UI settings
     "security.workspace.trust.untrustedFiles": "open",
     "editor.formatOnSaveMode": "file",
     "eslint.format.enable": true,
@@ -80,9 +79,6 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "vim.cursorStylePerMode.replace": "underline",
-    "vim.cursorStylePerMode.insert": "line",
-    "vim.cursorStylePerMode.normal": "block",
     "typescript.referencesCodeLens.enabled": true,
     "javascript.referencesCodeLens.enabled": true,
     "editor.overviewRulerBorder": false,
@@ -100,7 +96,6 @@
     "git.suggestSmartCommit": false,
     "editor.cursorBlinking": "solid",
     "editor.codeLensFontFamily": " ",
-    "continue.enableTabAutocomplete": true,
     "vitest.nodeExecutable": "C:\\Program Files\\nodejs\\node.exe",
     "githubPullRequests.pullBranch": "never",
     "find-it-faster.general.useTerminalInEditor": true,
@@ -108,15 +103,9 @@
     "javascript.preferences.quoteStyle": "single",
     "typescript.preferences.quoteStyle": "single",
     "prettier.jsxSingleQuote": true,
-    // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "[python]": {
-        "diffEditor.ignoreTrimWhitespace": false,
-        "gitlens.codeLens.symbolScopes": [
-            "!Module"
-        ],
-        "editor.formatOnSave": true,
-        "editor.wordBasedSuggestions": "off",
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
     },
     "[typescript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -131,6 +120,9 @@
     "prettier.endOfLine": "auto",
     // Vim settings
     "vim.easymotion": true,
+    "vim.cursorStylePerMode.replace": "underline",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
     "vim.foldfix": true,
     "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
     "vim.highlightedyank.enable": true,
@@ -482,5 +474,4 @@
         "git diff",
         "git show"
     ],
-    "editor.fontSize": 13,
 }
