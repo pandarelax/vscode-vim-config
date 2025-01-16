@@ -18,6 +18,11 @@
     "key": "ctrl+e",
     "when": "editorTextFocus"
   },
+  // {
+  //   "command": "solutionExplorer.focus",
+  //   "key": "ctrl+e",
+  //   "when": "editorTextFocus && editorLangId == csharp"
+  // },
   {
     "command": "explorer.newFile",
     "key": "a",

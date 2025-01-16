@@ -105,7 +105,7 @@
     "prettier.jsxSingleQuote": true,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
     },
     "[typescript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -119,6 +119,7 @@
     },
     "prettier.endOfLine": "auto",
     // Vim settings
+    "vim.showMarksInGutter": true,
     "vim.easymotion": true,
     "vim.cursorStylePerMode.replace": "underline",
     "vim.cursorStylePerMode.insert": "line",
@@ -143,6 +144,47 @@
             ],
             "commands": [
                 "lazygit.openLazygit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s",
+                "d"
+            ],
+            "commands": [
+                "workbench.action.debug.start"
+            ],
+            "when": [
+                "debuggersAvailable && debugState == 'inactive'"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s",
+                "d",
+                "c"
+            ],
+            "commands": [
+                "workbench.action.debug.stop"
+            ],
+            "when": [
+                "inDebugMode && !focusedSessionIsAttach"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s",
+                "d",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.debug.restart"
+            ],
+            "when": [
+                "inDebugMode"
             ]
         },
         // NAVIGATION
@@ -474,4 +516,8 @@
         "git diff",
         "git show"
     ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "sqltools.useNodeRuntime": true,
 }
