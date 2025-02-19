@@ -113,7 +113,12 @@
     "window.title": "",
     "terminal.explorerKind": "integrated",
     "debug.terminal.clearBeforeReusing": true,
-    "workbench.colorTheme": "Everforest Dark",
+    "workbench.colorCustomizations": {
+        "[Kanagawa]": {
+            "editorCursor.background": "#000000",
+            "terminal.ansiBrightBlack": "#707070",
+        }
+    },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -592,4 +597,5 @@
         }
     ],
     "mssql.openQueryResultsInTabByDefaultDoNotShowPrompt": true,
+    "workbench.colorTheme": "Kanagawa",
 }
