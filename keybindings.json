@@ -138,5 +138,31 @@
   {
     "key": "alt+q",
     "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "aider --watch-files --no-auto-commits\n"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "workbench.view.extension.roo-cline-ActivityBar",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "activeViewlet == 'workbench.view.extension.roo-cline-ActivityBar'"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.positionPanelRight"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.positionPanelBottom"
   }
 ]

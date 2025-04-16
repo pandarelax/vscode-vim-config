@@ -7,7 +7,6 @@
         "file:///C:/Users/efeha/AppData/Roaming/Code/User/custom-vscode.css",
         // "file:///C:/Users/Efe/vscode-script.js",
     ],
-    "workbench.iconTheme": "material-icon-theme",
     // editor settings
     "editor.fontSize": 14,
     "csharp.inlayHints.enableInlayHintsForTypes": true,
@@ -22,7 +21,6 @@
     },
     "lazygit.command": "lazygit; if ($?) { exit }",
     "files.insertFinalNewline": false,
-    "window.menuBarVisibility": "compact",
     "window.density.editorTabHeight": "compact",
     "window.commandCenter": false,
     "catppuccin.accentColor": "pink",
@@ -576,14 +574,18 @@
             "applicationName": "vscode-mssql",
             "profileName": "amm",
             "connectionString": "Data Source=.;Database=ammprodcut;Integrated Security=true;TrustServerCertificate=True",
-            "password": ""
+            "password": "",
+            "id": "BE457180-DECC-4987-BE65-1AE7C1B03AD7",
+            "groupId": "5069816E-D4ED-4336-8EBB-2B1A58BE0835"
         },
         {
             "authenticationType": "SqlLogin",
             "connectTimeout": 15,
             "applicationName": "vscode-mssql",
             "connectionString": " Data Source=.;Database=ammprodcut;Integrated Security=true;TrustServerCertificate=True",
-            "password": ""
+            "password": "",
+            "id": "B4CFA6D1-C48F-454A-AB90-DBE4F3F8E629",
+            "groupId": "5069816E-D4ED-4336-8EBB-2B1A58BE0835"
         },
         {
             "authenticationType": "Integrated",
@@ -593,9 +595,80 @@
             "database": "ammprodcut",
             "server": "localhost",
             "trustServerCertificate": true,
-            "password": ""
+            "password": "",
+            "id": "392D839C-1AD0-46E6-8DCC-08F1CA7EAAC2",
+            "groupId": "5069816E-D4ED-4336-8EBB-2B1A58BE0835"
         }
     ],
     "mssql.openQueryResultsInTabByDefaultDoNotShowPrompt": true,
-    "workbench.colorTheme": "Kanagawa",
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#dd0531"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#61dafb"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Svelte Orange",
+            "value": "#ff3d00"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        }
+    ],
+    "geminicodeassist.project": "",
+    "geminicodeassist.inlineSuggestions.enableAuto": true,
+    "everforest.darkContrast": "hard",
+    "diffEditor.codeLens": true,
+    "sonarlint.connectedMode.connections.sonarqube": [
+        {
+            "serverUrl": "https://sonarqube.flyingdonkey.com.au",
+            "connectionId": "https-sonarqube-flyingdonkey-com-au-",
+            "disableNotifications": true
+        }
+    ],
+    "sonarlint.focusOnNewCode": true,
+    "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
+    "sonarlint.rules": {
+        "typescript:S1874": {
+            "level": "on"
+        },
+        "typescript:S2004": {
+            "level": "on"
+        },
+        "typescript:S6770": {
+            "level": "off"
+        }
+    },
+    "workbench.colorTheme": "Tokyo Night",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "5069816E-D4ED-4336-8EBB-2B1A58BE0835"
+        }
+    ]
 }
